@@ -1,0 +1,88 @@
+
+
+.container {
+    display: grid;
+    grid-template: auto auto 1fr auto / auto 1fr auto;
+   
+}
+
+.dog {
+  grid-column: 1 / 4;
+}
+
+header {
+  padding: 2rem;
+  grid-column: 1 / 4;
+}
+
+.left-side {
+  grid-column: 1 / 2;
+}
+
+main {
+  height: 60vh;
+  grid-column: 2 / 3;
+}
+
+.right-side {
+  grid-column: 3 / 4;
+}
+
+foot {
+  grid-column: 1 / 4;
+}
+
+.section {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+.blue {
+  background-color: #A9E2EA;
+}
+.coral {
+  background-color: #F6C8AB;
+}
+
+.purple {
+  background-color: #DFD3E4;
+}
+
+.pink {
+  background-color: #F5E0E9;
+}
+
+.yellow {
+  background-color: #FFE8B4;
+}
+
+.green {
+  background-color: #D4F2C4;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #999;
+  font-size: .9rem;
+}
+
+img {
+  margin: 5px;
+}
+@keyframes move {
+  0% {left: 0%}
+  25% {left: 30%}
+  50% {left: 60%}
+  75% {left: 30%}
+  95% {left: 0.1%}
+  }
+  
+#move {
+    position: relative;
+    animation-name: move;
+    animation-duration: 120s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    color: orange;
+}
